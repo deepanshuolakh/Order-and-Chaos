@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Order and Chaos</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="game-container">
+            <header class="game-header">
+                <h1>Order and Chaos</h1>
+                <div class="game-info">
+                    <div class="current-player">
+                        <span class="player-label">Current Player:</span>
+                        <span id="current-player" class="player-name">Order</span>
+                    </div>
+                    <div class="symbol-selection">
+                        <span class="symbol-label">Choose Symbol:</span>
+                        <button id="symbol-x" class="symbol-btn btn btn--outline">X</button>
+                        <button id="symbol-o" class="symbol-btn btn btn--outline">O</button>
+                    </div>
+                </div>
+            </header>
+            
+            <div class="game-board-container">
+                <div id="game-board" class="game-board"></div>
+            </div>
+            
+            <div class="game-status">
+                <div id="game-message" class="game-message"></div>
+                <button id="reset-btn" class="btn btn--primary">New Game</button>
+            </div>
+        </div>
+    </div>
+    
+    <script src="app.js"></script>
+</body>
+</html>
